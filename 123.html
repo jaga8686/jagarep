@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html lang="en-GB"> 
+ <head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+ <title>hello whirled</title> 
+ <script type="text/javascript">
+function populateTheOtherInputField() { 
+  document.groovyform.serviceField.value = document.groovyform.service.value; 
+  } 
+</script>
+</head> 
+<body onLoad="myOnloadEvent();"> 
+ <form name="groovyform">
+<input type="button" onclick="populateTheOtherInputField()" value="Test" name="service">
+<input type="button" onclick="populateTheOtherInputField()" value="Run" name="service">
+<input type="text" id="serviceField" name="serviceField">
+</form>
+
+
+ </body> 
+</html>
